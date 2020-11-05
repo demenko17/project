@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a;
+	cout << "Input a" << endl;
+	cin >> a;
+	bool c = (a / 100 != (a % 100) / 10 && (a % 100) / 10 != (a % 100) % 10 && a / 100 != (a % 100) % 10) ? true : false;
+	cout << boolalpha << c << endl;
+
+}
